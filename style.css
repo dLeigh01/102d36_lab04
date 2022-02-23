@@ -1,0 +1,37 @@
+header {
+    background-color: #E3DC95;
+    padding: 10px;
+    border-radius: 7%;
+}
+
+h1 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 50px;
+}
+
+/* ul {
+    background-color: #51513D;
+} */
+
+li {
+    list-style: none;
+    display: inline-block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #A6A867;
+    border-radius: 10%;
+    text-align: center;
+}
+
+a {
+    color: #1B2021;
+}
+
+body {
+    background-color: #E3DCC2;
+    color: #1B2021;
+}
