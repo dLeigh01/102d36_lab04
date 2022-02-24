@@ -10,9 +10,9 @@ h1 {
     font-size: 50px;
 }
 
-/* ul {
-    background-color: #51513D;
-} */
+ul {
+    text-align: center;
+}
 
 li {
     list-style: none;
@@ -34,4 +34,36 @@ a {
 body {
     background-color: #E3DCC2;
     color: #1B2021;
+}
+
+#banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border: 5px solid #51513D;
+    width: 85%;
+}
+
+p {
+    margin-left: 20px;
+    float: left;
+    width: 44%;
+    font-size: 25px;
+}
+
+#side {
+    margin-left: 7%;
+    width: 44%;
+}
+
+footer {
+    background-color: #E3DC95;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h4 {
+    text-align: center;
 }
