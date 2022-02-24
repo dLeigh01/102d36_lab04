@@ -13,17 +13,12 @@ function getUserName() {
 }
 
 function askForOpinion() {
-    var isHeCute = confirm("Now a more important question, do you believe cats are cute?");
+    var isHeCute = prompt("Now a more important question, do you believe cats are cute?");
     
-    if (isHeCute == false) {
-        document.write("Good, you're smart. Smarter than the rest.");
-    } if (isHeCute == true){
-        let anotherChance = confirm("Are you certain?");
-        if (anotherChance == true) {
-            document.write("I'm sorry to inform you that you are sorely mistaken.");
-        } else {
-        document.write("Good, you're smart. Smarter than the rest.");
-        }
+    if (isHeCute.toLowerCase == "yes") {
+        document.write("I'm sorry to inform you that you are sorely mistaken.");
+    } else {
+        document.write("Good, you're smart. Smarter than the rest.")
     }
 }
     
