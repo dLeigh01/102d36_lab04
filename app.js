@@ -13,11 +13,17 @@ function getUserName() {
 }
 
 function askForOpinion() {
-    var isHeCute = prompt("Now a more important question, do you believe cats are cute?");
-    
-    if (isHeCute.toLowerCase == "yes") {
+    var isHeCute = prompt("Now a more important question, do you believe cats are cute?").toLowerCase();
+    console.log(isHeCute);
+    if (isHeCute != 'yes' && isHeCute != 'no') {
+        while (isHeCute != 'yes' && isHeCute != 'no') {
+            isHeCute = prompt("Do you think this is a game? I need a real answer, yes or no?").toLowerCase();
+        }
+    }
+    if (isHeCute == "yes") {
         document.write("I'm sorry to inform you that you are sorely mistaken.");
-    } else {
+    }
+    else if (isHeCute == 'no') {
         document.write("Good, you're smart. Smarter than the rest.")
     }
 }
@@ -38,4 +44,16 @@ function getTime() {
     }
     
     document.write(greeting);
+}
+
+function displayCat() {
+    let response = prompt("On a scale of 1-10, how much do you value your life?");
+    let display = '';
+
+    if (response > 0) {
+        for (let i = 0; i < response; i++) {
+            display += "🐈";
+        }
+        document.write(display + " good news! This many cats are on their way to your location RIGHT NOW! It is already too late to run.")
+    } 
 }
